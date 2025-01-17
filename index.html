@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    #open-nav {
+      display: none;
+    }
+    #clos_nav {
+      display: none;
+    }
+    #social-media{
+      width: 30%;
+    }
+    @media screen and (max-width: 600px) {
+      #open-nav {
+        display: block;
+      }
+      #clos_nav {
+        display: block;
+      }
+      #social-media{
+        width: 95%;
+      }
+    }
+ 
+  </style>
+  <body class="container h-screen">
+    <nav
+      class="flex justify-between xl:justify-around m-auto xl:p-2 p-4 items-start container"
+    >
+      <img
+        src="image/logo-removebg-preview.png"
+        alt=""
+        class=""
+        style="width: 220px; height: 120px; object-fit: cover"
+      />
+      <ul
+        class="xl:flex hidden xl:flex-row flex-col xl:h-max pt-7 gap-5 rounded-l-xl xl:static fixed top-0 right-0 p-4 bg-emerald-400 xl:bg-transparent"
+      >
+        <i
+          class="fa-solid fa-xmark absolute top-2 right-2 text-2xl font-bold active:text-orange-500"
+          id="clos_nav"
+        ></i>
+        <li>
+          <a
+            href="#home_page"
+            class="text-sm font-bold hover:text-orange-600 transition-colors"
+            >الصفحة الرئيسية</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-sm font-bold hover:text-orange-600 transition-colors"
+            >شركة</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-sm font-bold hover:text-orange-600 transition-colors"
+            >خدماتنا</a
+          >
+        </li>
+        <li>
+          <a
+            href="#details"
+            class="text-sm font-bold hover:text-orange-600 transition-colors"
+            >تفاصيل</a
+          >
+        </li>
+        <button
+          class="w-full h-12 xl:w-52 bg-orange-600 font-bold text-white rounded-md hover:bg-white hover:text-orange-600 transition-colors"
+          style="height: 40px"
+        >
+          اتصال
+        </button>
+      </ul>
+      <i class="fa-solid fa-bars text-4xl text-green-500" id="open-nav"></i>
+    </nav>
+    <section
+      class="container h-screen flex xl:flex-row flex-col justify-around items-center"
+      style="
+        background: linear-gradient(black, rgba(0, 0, 0, 0.356)),
+          url('image/télécharger (1).jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+      id="home_page"
+    >
+      <img
+        src="image/1-removebg-preview (3).png"
+        class="xl:w-1/3 w-4/5 xl:flex hidden"
+        alt="oil image"
+      />
+      <div
+        class="flex flex-col justify-center gap-5 items-end xl:w-1/3 w-4/5 text-right"
+        style="justify-content: end; align-items: end; margin-right: 50px"
+      >
+        <h1 class="font-bold xl:text-4xl text-3xl" style="color: orangered">
+          شركة الزيوت الجبلية
+        </h1>
+        <h2
+          class="xl:text-2xl text-xl font-bold"
+          style="color: rgb(20, 224, 20)"
+        >
+          : شركة زيت عضوي طبيعي نقي
+        </h2>
+        <p
+          class="text-right font-bold text-white xl:text-xl leading-loose text-sm"
+          style="text-align: right; line-height: 30px"
+        >
+          شركة الزيوت الجبلية هي شركة تعمل على إنتاج وتصدير زيت الزيتون البكر
+          الممتاز والمناسب للاستخدام في الطهي والأكل. تتميز هذه الشركات بتقنيات
+          متقدمة في زراعة الزيتون واستخراج الزيت لضمان الحفاظ على جودته ونكهته
+          الطبيعية. تهدف هذه الشركات إلى تقديم زيت الزيتون الطازج والصالح
+          للاستهلاك اليومي، مع التأكيد على الجودة والسلامة في جميع مراحل الإنتاج
+        </p>
+        <button
+          class="w-1/3 h-12 bg-orange-600 font-bold text-white rounded-md hover:bg-white hover:text-orange-600 transition-colors"
+          style="height: 40px"
+        >
+          انظر المزيد
+        </button>
+        <div
+          class="container p-10 xl:flex hidden w-full gap-5 xl:justify-around justify-between items-center rounded-xl h-40 bg-white"
+          style="background-color: #fff; border-radius: 20px; padding: 20px"
+        >
+          <div class="flex justify-center items-center gap-5">
+            <div class="flex justify-center items-center p-3">
+              <img
+                src="image/télécharger__3_-removebg-preview.png"
+                width="100PX"
+                alt=""
+                style="background-color: burlywood; border-radius: 50%"
+              />
+            </div>
+            <div class="flex flex-col justify-center items-center gap-2">
+              <p class="font-bold xl:text-xl text-sm" style="color: orangered">
+                : زيت العود
+              </p>
+              <h2 class="font-bold xl:text-xl text-sm" style="color: green">
+                500ml
+              </h2>
+              <h1 class="font-bold xl:text-xl text-sm">50dh</h1>
+            </div>
+          </div>
+          <div class="flex justify-center items-center gap-5">
+            <div class="flex justify-center items-center p-3">
+              <img
+                src="image/télécharger__2_-removebg-preview.png"
+                width="100PX"
+                alt=""
+                style="background-color: burlywood; border-radius: 50%"
+              />
+            </div>
+            <div class="flex flex-col justify-center items-center gap-2">
+              <p class="font-bold xl:text-xl text-sm" style="color: orangered">
+                : زيت العود
+              </p>
+              <h2 class="font-bold xl:text-xl text-sm" style="color: green">
+                1000ml
+              </h2>
+              <h1 class="font-bold xl:text-xl text-sm">100dh</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="container flex xl:flex-row p-6 flex-col mt-44 justify-around items-center"
+      style="
+        background: url(image/oil-splash-7698107.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      "
+      id="details"
+    >
+      <img
+        src="image/olive-2657696_1280__1_-removebg-preview.png"
+        alt=""
+        class="xl:w-1/3 w-4/5"
+        style="border-radius: 50%; width: 400px"
+      />
+      <div
+        class="container flex flex-col gap-5 xl:w-1/3 W-4/5"
+        style="
+          display: flex;
+          justify-content: end;
+          align-items: end;
+          gap: 20px;
+          flex-direction: column;
+        "
+      >
+        <h1
+          class="text-4xl font-bold"
+          style="color: orangered; text-align: center"
+        >
+          نحن نستورد الزيتون من المزارع المملوكة للعائلة
+        </h1>
+        <p
+          class="font-bold text-xl xl:w-1/4 w-full"
+          style="text-align: right; line-height: 30px"
+        >
+          نحن نحرص على استيراد الزيتون من المزارع المملوكة للعائلة، مما يعزز
+          التزامنا بتقديم أفضل جودة ممكنة. امتلاك المزارع يتيح لنا مراقبة عمليات
+          الزراعة والحصاد بدقة، والتأكد من استخدام أساليب زراعية مستدامة وصديقة
+          للبيئة. كما يسمح لنا هذا النهج بتقديم زيت زيتون بكر ممتاز يتميز بنكهة
+          طبيعية غنية وقيمة غذائية عالية. من خلال الاعتماد على مزارعنا العائلية،
+          نتمكن من بناء علاقة ثقة مع عملائنا الذين يقدرون الجودة والاهتمام
+          بالتفاصيل في كل قطرة زيت.
+        </p>
+        <button
+          class="h-12 w-52 bg-orange-600 font-bold text-white rounded-md hover:bg-white hover:text-orange-600 transition-colors"
+          style="height: 40px; width: 200px"
+        >
+          اتصال
+        </button>
+      </div>
+    </section>
+    <section
+      class="container flex xl:flex-row p-6 flex-col mt-44 justify-around items-center"
+      style="margin-top: 100px"
+      id="details"
+    >
+      <img
+        src="image/télécharger (1).jpeg"
+        alt=""
+        class="xl:w-1/3 w-4/5"
+        style="border-radius: 50%; width: 400px"
+      />
+      <div
+        class="container flex flex-col gap-5 xl:w-1/3 W-4/5"
+        style="
+          display: flex;
+          justify-content: end;
+          align-items: end;
+          gap: 20px;
+          flex-direction: column;
+        "
+      >
+        <h1
+          class="text-4xl font-bold"
+          style="color: orangered; text-align: center"
+        >
+          مراحل عصر الزيتون في معصرتنا :
+        </h1>
+        <p
+          class="font-bold xl:w-1/4 w-full"
+          style="text-align: right; line-height: 30px"
+        >
+          :إليك ملخص لمراحل عصر الزيتون في معصرتنا<br />
+
+          .
+          <span class="text-xl underline font-bold" style="color: green"
+            >الحصاد</span
+          >
+          : جمع الزيتون يدوياً بطرق تقليدية للحفاظ على جودته<br />
+          .
+          <span class="text-xl underline font-bold" style="color: green"
+            >التنظيف</span
+          >
+          : تنظيف الزيتون من الأوساخ والأتربة باستخدام مياه نظيفة<br />
+          .
+          <span class="text-xl underline font-bold" style="color: green">
+            الطحن</span
+          >
+          : طحن الزيتون باستخدام مطاحن حديثة لتفتيت الثمار<br />
+          .
+          <span class="text-xl underline font-bold" style="color: green"
+            >العجن</span
+          >
+          : عجن عجينة الزيتون للحصول على خليط متجانس<br />
+          .
+          <span class="text-xl underline font-bold" style="color: green"
+            >الفصل بالطرد المركزي</span
+          >
+          : فصل الزيت عن المياه والمخلفات باستخدام أجهزة الطرد المركزي<br />
+          .
+          <span class="text-xl underline font-bold" style="color: green"
+            >التصفية والتعبئة</span
+          >
+          : تصفية الزيت لضمان نقائه وتعبئته في عبوات تحفظ جودته
+        </p>
+        <button
+          class="h-12 w-52 bg-orange-600 font-bold text-white rounded-md hover:bg-white hover:text-orange-600 transition-colors"
+          style="height: 40px; width: 200px"
+        >
+          اتصال
+        </button>
+      </div>
+    </section>
+    <section class="flex container justify-center items-center flex-col gap-5">
+      <h1 class="text-3xl font-bold" style="color: orangered">
+        فوائد منتجاتنا
+      </h1>
+      <p class="text-xl font-bold" style="text-align: center">
+        : منتجاتنا من زيت الزيتون البكر الممتاز تتمتع بالعديد من الفوائد الصحية
+        والعلاجية
+      </p>
+      <div
+        class="container flex xl:flex-row flex-col gap-5 justify-around items-center"
+      >
+        <div
+          class="container flex justify-around items-center xl:flex-row flex-col p-6"
+        >
+          <div
+            class="flex flex-col w-1/4 justify-center ; gap-5 items-center"
+            style="
+              background-color: rgba(0, 0, 0, 0.178);
+              border-radius: 20px;
+              padding-bottom: 20px;
+            "
+          >
+            <img
+              src="image/olive-oil-968657_1280-removebg-preview.png"
+              alt=""
+              style="border-radius: 0px 0px 20px 20px"
+              width="200px"
+            />
+            <h2 class="text-2xl font-bold" style="color: orangered">
+              صحة القلب
+            </h2>
+          </div>
+        </div>
+        <div
+          class="container flex justify-around items-center xl:flex-row flex-col p-6"
+        >
+          <div
+            class="flex flex-col w-1/4 justify-center ; gap-5 items-center"
+            style="
+              background-color: rgba(0, 0, 0, 0.178);
+              border-radius: 20px;
+              padding-bottom: 20px;
+            "
+          >
+            <img
+              src="image/olive-2614000_1280-removebg-preview.png"
+              alt=""
+              style="border-radius: 0px 0px 20px 20px"
+              width="200px"
+            />
+            <h2 class="text-2xl font-bold" style="color: orangered">
+              مضاد للالتهابات
+            </h2>
+          </div>
+        </div>
+        <div
+          class="container flex justify-around items-center xl:flex-row flex-col p-6"
+        >
+          <div
+            class="flex flex-col w-1/4 justify-center ; gap-5 items-center"
+            style="
+              background-color: rgba(0, 0, 0, 0.178);
+              border-radius: 20px;
+              padding-bottom: 20px;
+            "
+          >
+            <img
+              src="image/oil-3112195_1280-removebg-preview.png"
+              alt=""
+              style="border-radius: 0px 0px 20px 20px"
+              width="200px"
+            />
+            <h2 class="text-2xl font-bold" style="color: orangered">
+              صحة العظام
+            </h2>
+          </div>
+        </div>
+        <div
+          class="container flex justify-around items-center xl:flex-row flex-col p-6"
+        >
+          <div
+            class="flex flex-col w-1/4 justify-center ; gap-5 items-center"
+            style="
+              background-color: rgba(0, 0, 0, 0.068);
+              border-radius: 20px;
+              padding-bottom: 20px;
+            "
+          >
+            <img
+              src="image/olive-2657696_1280__1_-removebg-preview.png"
+              alt=""
+              style="border-radius: 0px 0px 20px 20px"
+              width="200px"
+            />
+            <h2 class="text-2xl font-bold" style="color: orangered">
+              تحسين الهضم
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col justify-center items-center gap-5">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1130.8381093428607!2d-4.629607664292064!3d34.55650448596774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sma!4v1736111532334!5m2!1sen!2sma"
+        width="80%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div
+        class="W-4/5 flex xl:flex-row flex-col justify-around items-center p-6"
+        style="background-color: orange; border-radius: 20px"
+      >
+        <img
+          src="image/télécharger__1_-removebg-preview.png"
+          class="w-1/3"
+          alt=""
+        />
+        <div class="flex flex-col gap-5 w-1/2">
+          <h1
+            class="text-5xl font-extrabold"
+            style="
+              color: #fff;
+              font-size: 2rem;
+              text-align: center;
+              font-weight: 900;
+            "
+          >
+            إشترك للتواصل معنا و معرفة الجديد
+          </h1>
+          <div
+            class="flex justify-around items-center"
+            style="padding: 10px; background-color: #fff; border-radius: 10px"
+          >
+            <input
+              type="email"
+              placeholder="enter your email"
+              style="background-color: transparent; outline: none; border: none"
+            />
+            <button
+              class="bg-green-200 text-white font-bold"
+              style="
+                background-color: green;
+                width: 150px;
+                padding: 5px;
+                border-radius: 20px;
+              "
+            >
+              إشتراك
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+    class="flex justify-around xl:flex-row flex-col items-center gap-6 p-6"
+    style="
+        background-color: lawngreen;
+        margin-top: 50px;
+        border-radius: 100px 100px 0px 0px;
+    "
+>
+    <div id="social-media" class="flex flex-col w-1/5 gap-5" >
+        <img
+            src="image/logo-removebg-preview.png"
+            alt=""
+            style="width: 220px; height: 120px; object-fit: cover"
+        />
+        <p class="font-bold" style="color: #fff; text-align: right;">
+            شكرًا جزيلاً لثقتكم بمنتجاتنا. نسعى دائمًا لتقديم أفضل جودة وخدمة لعملائنا الكرام. ندعوكم لمواصلة التسوق معنا والاستمتاع بتجربة متميزة.
+        </p>
+        <div class="flex justify-around items-center w-full">
+            <i
+                class="fa-brands fa-instagram"
+                style="
+                    color: #fff;
+                    background-color: orangered;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    cursor: pointer;
+                "
+            ></i>
+            <i
+                class="fa-brands fa-facebook"
+                style="
+                    color: #fff;
+                    background-color: orangered;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    cursor: pointer;
+                "
+            ></i>
+            <i
+                class="fa-brands fa-tiktok"
+                style="
+                    color: #fff;
+                    background-color: orangered;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    cursor: pointer;
+                "
+            ></i>
+            <i
+                class="fa-brands fa-youtube"
+                style="
+                    color: #fff;
+                    background-color: orangered;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    cursor: pointer;
+                "
+            ></i>
+        </div>
+    </div>
+    <div id="" class="flex flex-col w-1/5 gap-5 p-6" >
+        <h1 class="text-3xl font-bold" style="color: #fff; text-align: right;">رأس الصفحة</h1>
+        <ul
+            class="xl:flex hidden justify-end items-end flex-col xl:h-max pt-7 gap-5 rounded-l-xl xl:static fixed top-0 right-0 p-4"
+            style="text-align: right;"
+        >
+            <i
+                class="fa-solid fa-xmark absolute top-2 right-2 text-2xl font-bold active:text-orange-500"
+                id="clos_nav"
+            ></i>
+            <li>
+                <a
+                    href="#home_page"
+                    class="text-sm font-bold hover:text-orange-600 transition-colors"
+                    >الصفحة الرئيسية</a
+                >
+            </li>
+            <li>
+                <a
+                    href="#"
+                    class="text-sm font-bold hover:text-orange-600 transition-colors"
+                    >شركة</a
+                >
+            </li>
+            <li>
+                <a
+                    href="#"
+                    class="text-sm font-bold hover:text-orange-600 transition-colors"
+                    >خدماتنا</a
+                >
+            </li>
+            <li>
+                <a
+                    href="#details"
+                    class="text-sm font-bold hover:text-orange-600 transition-colors"
+                    >تفاصيل</a
+                >
+            </li>
+        </ul>
+    </div>
+    <div class="flex flex-col w-1/5 gap-5 p-6" >
+        <h1 class="text-3xl font-bold" style="color: #fff; text-align: right;">الإتصال:</h1>
+        <h3 style="direction: rtl;" class="font-bold">الهاتف:0675468072</h3>
+        <h3 style="direction: rtl;" class="font-bold">الإميل :hichamdrakech9@gmail.com</h3>
+        <h3 style="direction: rtl;" class="font-bold">الموقع:تاونات _الطريق الوطنية رقم 8</h3>
+        <h3 style="direction: rtl;" class="font-bold">ساعات العمل :10:00_18:00. الإثنين_الجمعة</h3>
+    </div>
+   
+</footer>
+
+  </body>
+  <script>
+    let open_nav = document.getElementById("open-nav");
+    let clos_nav = document.getElementById("clos_nav");
+    let navb = document.querySelector("nav ul");
+    open_nav.onclick = () => {
+      navb.style.display = "flex";
+      open_nav.style.display = "none";
+    };
+    clos_nav.onclick = () => {
+      navb.style.display = "none";
+      open_nav.style.display = "flex";
+    };
+    let;
+  </script>
+</html>
